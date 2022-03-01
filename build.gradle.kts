@@ -18,7 +18,7 @@ dependencies {
 
 tasks.jar {
     manifest {
-        attributes["Main-Class"] = "MainKt"
+        attributes["Main-Class"] = "com.ksb.learning.MainKt"
     }
     configurations["compileClasspath"].forEach { file: File ->
         from(zipTree(file.absoluteFile))
@@ -35,5 +35,5 @@ tasks.withType<KotlinCompile>() {
 }
 
 application {
-    mainClass.set("MainKt")
+    mainClass.set("com.ksb.learning.MainKt")
 }

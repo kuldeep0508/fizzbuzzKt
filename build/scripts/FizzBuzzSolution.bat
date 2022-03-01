@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\FizzBuzzSolution-1.0-SNAPSHOT.jar;%APP_HOME%\lib\ko
 
 
 @rem Execute FizzBuzzSolution
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %FIZZ_BUZZ_SOLUTION_OPTS%  -classpath "%CLASSPATH%" MainKt %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %FIZZ_BUZZ_SOLUTION_OPTS%  -classpath "%CLASSPATH%" com.ksb.learning.MainKt %*
 
 :end
 @rem End local scope for the variables with windows NT shell
