@@ -1,3 +1,1 @@
-
-rootProject.name = "FizzBuzzSolution"
-
+rootProject.name = "fizzbuzz"

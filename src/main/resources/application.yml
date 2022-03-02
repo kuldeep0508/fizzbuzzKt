@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: fizz-buzz-kt-solution
+server:
+  port: ${api.port:80}
