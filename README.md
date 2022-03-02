@@ -43,4 +43,38 @@ _SAMPLE RESPONSE_
     "FizzBuzz"
 ]
 ```
+### run via cli using jar
 
+Follow below instructions:
+1. run gradle build command
+```
+./gradlew clean build
+```
+
+2. Execute java command
+
+```
+java -jar .\build\libs\fizzbuzz-0.0.1-SNAPSHOT.jar
+```
+
+### run via docker
+
+Run below commands:
+1. Pull the image 
+
+```
+docker pull kuldeep0508/fizz-buzz-kt:latest
+```
+
+2. Run the image using below commands which is doing port forwarding too `9081:80`. 
+
+```
+docker run -p9081:80 kuldeep0508/fizz-buzz-kt:latest
+```
+
+**NOTE**: spring boot is getting up at `80`
+
+
+After the app is up via any of the method then execute curl script using any of client (I have used `Postman`).
+
+<img src="./docs/images/Postaman_fizz_buzz_screenshot.png">
